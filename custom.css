@@ -1,0 +1,401 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+a {
+    margin: 0;
+    font-family: var(--font-family-1);
+    font-weight: 400;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
+        scroll-behavior: auto;
+    }
+}
+
+:root {
+    --orange: #D95D39;
+    --dark: #040922;
+    --gray: #EAEAEA;
+    --l-orange: #F0A202;
+    --blue: #081E7C;
+    --l-gray: #F2F2F2;
+    --white: #ffffff;
+    --black: #000000;
+    --text-dark: #1C1F35;
+    --text-gray: #666C89;
+    --font-size-h1: 3.75rem;
+    --font-size-h2: 2.5rem;
+    --font-size-h3: 2.25rem;
+    --font-size-h4: 1.75rem;
+    --font-size-h5: 1.5rem;
+    --font-size-m: 1.25rem;
+    --font-size-s: 0.9rem;
+    --font-size-base: 1rem;
+    --font-family-1: "HelveticaNeueCyr", sans-serif;
+    --font-family-2: "Neue Machina", sans-serif;
+    --font-family-3: "Roboto", sans-serif;
+    --font-family-4: "Organetto", sans-serif;
+}
+
+body,
+html {
+    color: var(--white);
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1366px) {
+    body,
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 900px) {
+    body,
+    html {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+    body,
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 490px) {
+    body,
+    html {
+        font-size: 8px;
+    }
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    color: var(--white);
+    font-family: var(--font-family-2);
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+h1,
+.h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2,
+.h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3,
+.h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 500;
+}
+
+h4,
+.h4 {
+    font-size: var(--font-size-h4);
+    font-weight: 500 ;
+}
+
+h5,
+.h5 {
+    font-size: var(--font-size-h5) ;
+    font-weight: 500 ;
+}
+
+h6,
+.h6 {
+    font-size: var(--font-size-m) ;
+    font-weight: 500 ;
+}
+
+.f-s-b {
+    font-size: var(--font-size-base) ;
+}
+
+.f-s-m {
+    font-size: var(--font-size-m) ;
+}
+
+.f-s-s {
+    font-size: var(--font-size-s) ;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-d-column {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.f-d-row {
+    flex-direction: row;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-inline {
+    display: inline-block;
+}
+
+.b-center {
+    text-align: center;
+}
+
+.f-center {
+    justify-content: center;
+}
+
+.f-between {
+    justify-content: space-between;
+}
+
+.f-a-center {
+    align-items: center;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.dark {
+    color: var(--dark);
+}
+
+.gray {
+    color: var(--gray);
+}
+
+.l-orange {
+    color: var(--l-orange);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.l-gray {
+    color: var(--l-gray);
+}
+
+.white {
+    color: var(--white) ;
+}
+
+.black {
+    color: var(--black);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.border-orange {
+    border-color: var(--orange);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.border-dark {
+    border-color: var(--dark);
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.border-gray {
+    border-color: var(--gray);
+}
+
+.bg-l-orange {
+    background-color: var(--l-orange);
+}
+
+.border-l-orange {
+    border-color: var(--l-orange);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.border-blue {
+    border-color: var(--blue);
+}
+
+.bg-l-gray {
+    background-color: var(--l-gray);
+}
+
+.border-l-gray {
+    border-color: var(--l-gray);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.border-white {
+    border-color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.border-black {
+    border-color: var(--black);
+}
+
+.w-400 {
+    font-weight: 400 ;
+}
+
+.w-500 {
+    font-weight: 500 ;
+}
+
+.w-600 {
+    font-weight: 600 ;
+}
+
+.w-700 {
+    font-weight: 700 ;
+}
+
+.w-800 {
+    font-weight: 800 ;
+}
+
+.w-900 {
+    font-weight: 900 ;
+}
+
+.f-f-1 {
+    font-family: var(--font-family-1);
+}
+
+.f-f-2 {
+    font-family: var(--font-family-2);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

@@ -1,0 +1,19 @@
+<svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip138_3645">
+			<rect id="mail 1" width="28.000000" height="28.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g opacity="0.900000">
+		<rect id="mail 1" width="28.000000" height="28.000000" fill="#FFFFFF" fill-opacity="0"/>
+		<g clip-path="url(#clip138_3645)">
+			<path id="Vector" d="M27.75 5.56L19.26 14L27.75 22.43C27.9 22.11 27.99 21.76 27.99 21.38L27.99 6.61C27.99 6.23 27.9 5.88 27.75 5.56Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M25.53 4.15L2.46 4.15C2.08 4.15 1.72 4.24 1.4 4.4L12.26 15.2C13.22 16.16 14.78 16.16 15.74 15.2L26.59 4.4C26.27 4.24 25.91 4.15 25.53 4.15Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M0.24 5.56C0.09 5.88 0 6.23 0 6.61L0 21.38C0 21.76 0.09 22.11 0.24 22.43L8.73 14L0.24 5.56Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+			<path id="Vector" d="M18.1 15.15L16.9 16.36C15.3 17.96 12.69 17.96 11.1 16.36L9.89 15.15L1.4 23.59C1.72 23.75 2.08 23.84 2.46 23.84L25.53 23.84C25.91 23.84 26.27 23.75 26.59 23.59L18.1 15.15Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+</svg>
